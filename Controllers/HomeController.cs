@@ -15,6 +15,7 @@ namespace SalesWebMvc.Controllers
 
         public IActionResult Index()
         {
+            ViewData["teste"] = "Teste view data email";
             return View();
         }
 
