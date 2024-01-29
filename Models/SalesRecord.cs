@@ -13,12 +13,12 @@ namespace SalesWebMvc.Models
 
 
         public SalesRecord() { }
-        public SalesRecord(int id, DateTime date, double amount)
+        public SalesRecord(DateTime date, double amount,SaleStatus status,Seller seller)
         {
-            Id = id;
             Date = date;
             Amount = amount;
-            Status = SaleStatus.Pending;
+            Status = status;
+            Seller = seller;
         }
     }
 }
